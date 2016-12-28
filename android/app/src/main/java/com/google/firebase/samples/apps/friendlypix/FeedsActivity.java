@@ -122,13 +122,7 @@ public class FeedsActivity extends AppCompatActivity implements PostsFragment.On
         getMenuInflater().inflate(R.menu.menu_feeds, menu);
 
         final MenuItem accountProfileItem = menu.findItem(R.id.action_profile);
-        Glide.with(this).load(user.getPhotoUrl()).asBitmap().into(new SimpleTarget<Bitmap>(100,100) {
-            @Override
-            public void onResourceReady(Bitmap resource, GlideAnimation glideAnimation) {
-                accountProfileItem.setIcon(new BitmapDrawable(getResources(), resource));
-            }
-        });
-
+        GlideUtil.loadProfileIcon(this, user.getPhotoUrl().toString(), accountProfileItem);
         return true;
     }
 
