@@ -66,7 +66,7 @@
         <activity
             android:name=".UserDetailActivity"
             android:label="@string/title_activity_user_detail"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:theme="@style/TransparentStatusBar"
             android:configChanges="orientation|screenSize" />
         <activity android:name=".BaseActivity"></activity>
     </application>

@@ -28,8 +28,8 @@
         android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:padding="10dp">
+        android:layout_height="40dp"
+        android:padding="5dp">
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/post_author_icon"
             android:layout_width="@dimen/post_author_icon_size"
@@ -44,6 +44,7 @@
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/post_author_icon"
             android:layout_marginLeft="4dp"
+            android:textSize="14sp"
             style="@style/Base.TextAppearance.AppCompat.Title"
             android:textColor="@android:color/primary_text_light_nodisable"
             />
@@ -56,12 +57,12 @@
             android:layout_alignParentEnd="true"
             android:layout_gravity="end"
             android:textColor="@android:color/primary_text_light"
-            android:textSize="18sp" />
+            android:textSize="12sp" />
     </RelativeLayout>
     <ImageView
         android:id="@+id/post_photo"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:scaleType="centerCrop" />
@@ -69,7 +70,6 @@
             android:id="@+id/post_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:singleLine="false"
             android:layout_marginLeft="6dp"
             android:layout_marginRight="6dp"
             android:layout_marginTop="6dp"
@@ -93,14 +93,14 @@
             android:padding="6dp">
             <ImageView
                 android:id="@+id/post_like_icon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:src="@drawable/heart_full"/>
             <ImageView
                 android:id="@+id/post_comment_icon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="6dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="12dp"
                 android:layout_toRightOf="@id/post_like_icon"
                 android:src="@drawable/ic_chat_24dp"
                 android:tint="@color/blue_grey_500"/>
